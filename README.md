@@ -6,9 +6,23 @@ This package contains Matlab code associated with the following publication:
 Please cite this  paper when using this code.
 
 ## Getting started
+
 Demo is launched by typing in the command window of Matlab:
 > DEMOPCC
+choice of the dataset can be changed by editing that file header: it is currently set to  process the original MNIST dataset
+```
+%% Read Data / comment as appropriate
+NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
+% NameOfData='MNIST10'      
+% NameOfData='wine'
+% NameOfData='australian'
+```
 
+## Datasets
+
+MNIST is provided as a mat file and comes from https://github.com/daniel-e/mnist_octave/raw/master/mnist.mat
+
+Datasets *wine* and *australian* are downloaded from https://github.com/PouriaZ/GMML
 
 
 
