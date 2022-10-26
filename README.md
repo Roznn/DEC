@@ -1,6 +1,6 @@
 # Principal Component Classification
 
-> [https://arxiv.org/pdf/2210.12746.pdf](https://arxiv.org/pdf/2210.12746.pdf)
+> [https://arxiv.org/pdf/2210.12746.pdf](2210.12746.pdf)
 
 
 
