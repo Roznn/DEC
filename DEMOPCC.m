@@ -5,8 +5,8 @@ function DEMOPCC
 clear all; close all;
 
 %% Read Data / comment as appropriate
-% NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
-NameOfData='MNIST10'
+NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
+% NameOfData='MNIST10'
 % NameOfData='wine'
 % NameOfData='australian'
 
