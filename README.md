@@ -32,15 +32,7 @@ Datasets *wine* and *australian* are downloaded from https://github.com/PouriaZ/
 In supervised learning, we consider available a  dataset $\mathcal{B}=\lbrace(\mathbf{x}^{(i)},\mathbf{y}^{(i)})\rbrace_{i=1,\cdots,N}$ of $N$ observations
 with $\mathbf{x}\in \mathbb{R}^{d_{\mathbf{x}}}$ denoting the  feature vector of dimension $d_{\mathbf{x}}$ and $\mathbf{y}\in \mathbb{R}^{n_c}$ the indicator class vector where $n_c$ is the number of classes.
 $$  \mathbf{z}_{\alpha}= (1-\alpha) \cdot
-    \begin{pmatrix}
-    \mathbf{x}\\
-    \mathbf{0}_{\mathbf{y}}\\
-    \end{pmatrix}
-    +\alpha \cdot
-     \begin{pmatrix}
-    \mathbf{0}_{\mathbf{x}}\\
-    \mathbf{y}\\
-    \end{pmatrix} $$
+  $$
 <img width="600" alt="" src="images/PCCMachineDesign.svg">
 
 ## Bibtex
