@@ -27,7 +27,9 @@ MNIST is downloaded from https://github.com/daniel-e/mnist_octave/raw/master/mni
 
 Datasets *wine* and *australian* are downloaded from https://github.com/PouriaZ/GMML
 
+## Machine design: using data encoding with class 
 
+<img width="400" alt="" src="images/PCCMachineDesign.svg">
 
 ## Bibtex
 
