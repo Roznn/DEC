@@ -9,7 +9,8 @@ Please cite this  paper when using this code.
 
 Demo is launched by typing in the command window of Matlab:
 > DEMOPCC
-choice of the dataset can be changed by editing that file header: it is currently set to  process the original MNIST dataset
+
+Choice of the dataset can be changed by editing that file header: it is currently set to  process the original MNIST dataset
 ```
 %% Read Data / comment as appropriate
 NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
