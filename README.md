@@ -1,6 +1,6 @@
 # Principal Component Classification
 
-> [MIG2020.pdf](https://arxiv.org/pdf/2210.12746.pdf)](https://arxiv.org/pdf/2210.12746.pdf)
+> [https://arxiv.org/pdf/2210.12746.pdf](https://arxiv.org/pdf/2210.12746.pdf)
 
 
 
