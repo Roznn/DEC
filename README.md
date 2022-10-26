@@ -1,7 +1,7 @@
 # Principal Component Classification
 
 
- <img width="200" alt="" src="images/MNIST10_eigenvectors.svg"><img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu2u3.svg"><img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu3u4.svg"> |
+ <img width="200" alt="" src="images/MNIST10_eigenvectors.svg"><img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu2u3.svg"><img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu3u4.svg"> 
 
 This package contains Matlab code associated with the following publication:  
 > [ArXiv:2210.12746](https://arxiv.org/pdf/2210.12746.pdf)
@@ -9,7 +9,7 @@ Please cite this  paper when using this code.
 
 ## Getting started
 
-Demo is launched by typing in the command window of Matlab:
+Demo is launched by typing in the command window of Matlab (or Octave):
 > DEMOPCC
 
 Choice of the dataset can be changed by editing that file header: it is currently set to  process a subset of MNIST dataset
