@@ -16,9 +16,8 @@ NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
 if (strcmp(NameOfData,'MNISToriginal'))
     alpha=.9
     ne=16
-
-%    alpha=0.02
-%    ne=618
+    alpha=0.0
+    
 elseif (strcmp(NameOfData,'MNIST10'))
     alpha=.9
     ne=16  % ne=1 to 794
