@@ -20,7 +20,7 @@ NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
 
 ## Datasets
 
-MNIST is provided as a mat file and comes from https://github.com/daniel-e/mnist_octave/raw/master/mnist.mat
+MNIST is downloaded from https://github.com/daniel-e/mnist_octave/raw/master/mnist.mat
 
 Datasets *wine* and *australian* are downloaded from https://github.com/PouriaZ/GMML
 
