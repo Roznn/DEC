@@ -1,12 +1,12 @@
 % Rozenn Dahyot 2022
-% 
+%
 function DEMOPPC
 
 clear all; close all;
 
 %% Read Data / comment as appropriate
-NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
-% NameOfData='MNIST10'      
+% NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
+NameOfData='MNIST10'
 % NameOfData='wine'
 % NameOfData='australian'
 
@@ -72,6 +72,27 @@ scoretest0= fctScore(Ytest0hat,Ytest)
 
 toc
 
+%% figures 1 and 2 in the paper https://arxiv.org/abs/2210.12746
+
+if (strcmp(NameOfData,'MNIST10'))
+    
+    figure;
+    for k=1:4
+        subplot(4,2,2*k-1), imagesc(reshape(U(1:784,k), 28, 28)'), colormap('gray'), axis square,colorbar,
+        subplot(4,2,2*k), stem(U(785:794,k),'filled'), axis square,
+    end
+    
+    
+    [rows,cols,vals] = find(Ytrain==1);
+    clr = hsv(size(Ytrain,1));
+    figure;
+    t = tiledlayout(1,2);
+    for i=2:1:3
+        nexttile
+        gscatter(pZ(i,:),pZ(i+1,:),rows-1,clr), axis square, ...
+            title(strcat('Eigenspace ',int2str(i),'and',int2str(i+1)))
+    end
+end
 
 %%
 function [Xtrain,Xtest,Ytrain,Ytest] = fctLoadData(NameOfData)
@@ -110,14 +131,14 @@ if (strcmp(NameOfData,'MNIST10'))
         
     end
     
-
+    
 elseif(strcmp(NameOfData,'MNISToriginal'))
     
     d=load('mnist.mat');
     
-   
+    
     LabelTraining=d.trainY;
-          
+    
     nc=double(max(LabelTraining)-min(LabelTraining)+1); % nb of class
     
     dimimage=size(d.trainX,2); % feature space dimension
@@ -131,7 +152,7 @@ elseif(strcmp(NameOfData,'MNISToriginal'))
     Ytrain=zeros(nc, Ntrain);
     Ytest=zeros(nc,Ntest);
     
-     for i=0:nc-1
+    for i=0:nc-1
         Ind=find(d.trainY==i);
         Ytrain(i+1,Ind)=1;
         Indt=find(d.testY==i);
@@ -139,7 +160,7 @@ elseif(strcmp(NameOfData,'MNISToriginal'))
         
     end
     
- 
+    
 elseif(strcmp(NameOfData,'wine'))
     
     load('wine.mat');
@@ -202,14 +223,14 @@ elseif(strcmp(NameOfData,'australian'))
         Ytest(k,L:length(Ind)-NpC+L-1)=1;
         L=L+length(Ind)-NpC;
     end
-     
+    
     
 end
 %%
 function scorelabel= fctScore(Yhat,Yref)
 % function scorelabel= fctScore(Yhat,Yref)
 %   Yhat: estimate/prediction
-%   Yref: Reference/ground truth 
+%   Yref: Reference/ground truth
 
 
 if (size(Yhat)==size(Yref))
@@ -218,12 +239,12 @@ if (size(Yhat)==size(Yref))
     [temp,labelhat]=max(Yhat,[],1);
     [temp,labelref]=max(Yref,[],1);
     scorelabel=sum((abs(double(labelhat)-double(labelref)))==0)/ size(Yhat,2);
-
-     
+    
+    
 else
     
     display('the inputs dont have the same size')
     
-   scorelabel=-1;
+    scorelabel=-1;
     
 end
