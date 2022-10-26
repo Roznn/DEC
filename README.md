@@ -1,9 +1,7 @@
 # Principal Component Classification
 
 
-<img width="200" alt="" src="images/MNIST10_eigenvectors.svg">
-<img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu2u3.svg">
-<img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu3u4.svg">
+| <img width="200" alt="" src="images/MNIST10_eigenvectors.svg"> | <img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu2u3.svg"> | <img width="200" alt="" src="images/MNIST10_projectionsTrainingsetu3u4.svg"> |
 
 This package contains Matlab code associated with the following publication:  
 > [ArXiv:2210.12746](https://arxiv.org/pdf/2210.12746.pdf)
