@@ -31,6 +31,7 @@ Accuracy score first reported (acc=1) is for the training set with both feature 
 is for the set with the same features but no class provided,  and the last is for test set  (acc.=0.80930) that has not seen features during training an no class information (see paper).
 The time reported (3.94839 seconds) is for running the full demo (training+testing of the model), here run on Octave on laptop (Surface Pro 7).
 
+When processing dataset `MNIST10`, the demo creates some  figures but not all work with Octave.    
 
 ## Datasets
 
@@ -47,6 +48,14 @@ concatenating vectors $( (1-\alpha)\mathbf{x}^{(i)} , \alpha\mathbf{y}^{(i)})$.
 Principal Components are then used for classification even if no class information is available at test time to process a new input $\mathbf{x}$.
 
 <img width="600" alt="" src="images/PCCMachineDesign.svg">
+
+## Performance
+
+### Hyper-parameter space
+
+The number of principal components, and the scalar $0<\alpha<1$ are the hyperparameters controlling the model for classification.
+
+<img width="300" alt="" src="images/MNIST10_Ixy.svg"><img width="300" alt="" src="images/MNIST10_Ix0.svg"><img width="300" alt="" src="images/MNIST10_Ix0b.svg">
 
 ## Bibtex
 
