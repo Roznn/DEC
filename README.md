@@ -51,11 +51,18 @@ Principal Components are then used for classification even if no class informati
 
 ## Performance
 
+| Dataset |  | Accuracy     |     
+| ---| 
+
+
 ### Hyper-parameter space
 
 The number of principal components, and the scalar $0<\alpha<1$ are the hyperparameters controlling the model for classification.
+See below images of accuracy on hyperparameter space for `MNIST10` (see paper). These images were created with a for loops computing classification accuracy on a grid defined on   the hyperparameter space (code not provided). 
 
 <img width="300" alt="" src="images/MNIST10_Ixy.svg"><img width="300" alt="" src="images/MNIST10_Ix0.svg"><img width="300" alt="" src="images/MNIST10_Ix0b.svg">
+
+
 
 ## Bibtex
 
