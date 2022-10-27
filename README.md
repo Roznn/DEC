@@ -27,8 +27,8 @@ Example of output for `MNISToriginal` obtained with Octave
 <img width="400" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
 
 The model run by default on `MNISToriginal`   uses 16 principal components and as set $\alpha=0.9$.
-Accuracy score first reported is for $ {\mathcal{I}_{\mathbf{y}}^{\mathbf{x}}} $ (acc=1), the second is for $\mathcal{I}_{\mathbf{0}}^{\mathbf{x}}$ (acc.= 0.80798) and the last is for test set $\mathcal{I}_{\mathbf{0}}^{\mathbf{x}'}$ (acc.=0.80930)
-(see paper for notations used).
+Accuracy score first reported (acc=1) is for the training set with both feature and class information, the second (acc.= 0.80798) 
+is for the set with the same features but no class provided,  and the last is for test set  (acc.=0.80930) that has not seen features during training an no class information (see paper).
 The time reported (3.94839 seconds) is for running the full demo (training+testing of the model), here run on Octave on laptop (Surface Pro 7).
 
 
