@@ -21,10 +21,17 @@ Choice of the dataset can be changed by editing that file header: it is currentl
 % NameOfData='australian'
 ```
 
+### Example of Demo output 
 Example of output for `MNISToriginal` obtained with Octave 
 
-<img width="200" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
+<img width="400" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
 
+The model run by default on `MNISToriginal`   uses 16 principal components and as set $\alpha=0.9$.
+Accuracy score first reported (acc=1) is for the training set with both feature and class information, the second (acc.= 0.80798) 
+is for the set with the same features but no class provided,  and the last is for test set  (acc.=0.80930) that has not seen features during training an no class information (see paper).
+The time reported (3.94839 seconds) is for running the full demo (training+testing of the model), here run on Octave on laptop (Surface Pro 7).
+
+When processing dataset `MNIST10`, the demo creates some  figures but not all work with Octave.    
 
 ## Datasets
 
@@ -41,6 +48,30 @@ concatenating vectors $( (1-\alpha)\mathbf{x}^{(i)} , \alpha\mathbf{y}^{(i)})$.
 Principal Components are then used for classification even if no class information is available at test time to process a new input $\mathbf{x}$.
 
 <img width="600" alt="" src="images/PCCMachineDesign.svg">
+
+## Performance
+
+Random permutation training/test sets are used on  `australian` and `wine` dataset so results change at every run: average over 10 runs is reported here:
+
+| Dataset | nb of components $n_e$ | alpha $\alpha$  | Accuracy (test set)    |     
+| --- |  --- |  --- |  --- | 
+| `MNISToriginal` | 16 | 0.9 | 0.80930 |
+| `MNISToriginal` | 618 | 0.02 | 0.85410 |
+| `australian` | 4 | 0.2 | ~0.76 |
+| `australian` | 5 | 0.2 | ~0.84 |
+| `wine` | 4 | 0.2 | ~0.88 |
+| `wine` | 5 | 0.2 | ~0.92 |
+
+
+
+### Hyper-parameter space
+
+The number of principal components, and the scalar $0<\alpha<1$ are the hyperparameters controlling the model for classification.
+See below images of accuracy on hyperparameter space for `MNIST10` (see paper). These images were created with a for loops computing classification accuracy on a grid defined on   the hyperparameter space (code not provided). 
+
+<img width="300" alt="" src="images/MNIST10_Ixy.svg"><img width="300" alt="" src="images/MNIST10_Ix0.svg"><img width="300" alt="" src="images/MNIST10_Ix0b.svg">
+
+
 
 ## Bibtex
 
