@@ -51,11 +51,17 @@ Principal Components are then used for classification even if no class informati
 
 ## Performance
 
+Random permutation training/test sets are used on  `australian` and `wine` dataset so results change at every run: average over 10 runs is reported here:
+
 | Dataset | nb of components $n_e$ | alpha $\alpha$  | Accuracy (test set)    |     
 | --- |  --- |  --- |  --- | 
 | `MNISToriginal` | 16 | 0.9 | 0.80930 |
 | `MNISToriginal` | 618 | 0.02 | 0.85410 |
 | `australian` | 4 | 0.2 | ~0.76 |
+| `australian` | 5 | 0.2 | ~0.84 |
+| `wine` | 4 | 0.2 | ~0.88 |
+| `wine` | 5 | 0.2 | ~0.92 |
+
 
 
 ### Hyper-parameter space
