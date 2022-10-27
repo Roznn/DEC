@@ -31,7 +31,7 @@ Datasets *wine* and *australian* are downloaded from https://github.com/PouriaZ/
 
 In supervised learning, we consider available a  dataset $\mathcal{B}=\lbrace(\mathbf{x}^{(i)},\mathbf{y}^{(i)})\rbrace_{i=1,\cdots,N}$ of $N$ observations
 with $\mathbf{x}\in \mathbb{R}^{d_{\mathbf{x}}}$ denoting the  feature vector of dimension $d_{\mathbf{x}}$ and $\mathbf{y}\in \mathbb{R}^{n_c}$ the indicator class vector where $n_c$ is the number of classes.
-Our approach uses PCA trained on a dataset with samples $\mathbf{z}_{\alpha}^{(i)}$ that combines in one vector  sample $( (1-\alpha)\mathbf{x}^{(i)},\alpha\mathbf{y}^{(i)})$. Principal Component are then used for classification even if no class information is available at test time to process a new input $\mathbf{x}$.
+Our approach uses PCA trained on a dataset with samples $\mathbf{z}_{\alpha}^{(i)}$ that combines in one vector  sample $\mathbf{z}_{\alpha}^{(i)}=\lbrack (1-\alpha)\mathbf{x}^{(i)} \quad \alpha\mathbf{y}^{(i)}\rbrack^T$. Principal Components are then used for classification even if no class information is available at test time to process a new input $\mathbf{x}$.
 
 <img width="600" alt="" src="images/PCCMachineDesign.svg">
 
