@@ -14,20 +14,20 @@ NameOfData='MNISToriginal'  % original split Xtrain 60000 and Xtest 10000
 
 %% Hyperparameters  0<=0 alpha <=1
 if (strcmp(NameOfData,'MNISToriginal'))
-    alpha=.9
-    ne=16
+    alpha= 0.9 
+    ne= 16 
 
 %    alpha=0.02
 %    ne=618
 elseif (strcmp(NameOfData,'MNIST10'))
-    alpha=.9
+    alpha=0.9
     ne=16  % ne=1 to 794
 elseif (strcmp(NameOfData,'wine'))
-    alpha=.4
+    alpha=.2
     ne=4  % ne=1 to 16
     'random allocations train and test sets creating different results at each run'
 elseif (strcmp(NameOfData,'australian'))
-    alpha=.4
+    alpha=.2
     ne=4  % ne=1 to 16
     'random allocations train and test sets creating different results at each run'
 end
