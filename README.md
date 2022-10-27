@@ -51,8 +51,9 @@ Principal Components are then used for classification even if no class informati
 
 ## Performance
 
-| Dataset |  | Accuracy     |     
-| ---| 
+| Dataset | nb of components | alpha  | Accuracy (test set)    |     
+| --- |  --- |  --- |  --- | 
+`MNISToriginal` | 16 | 0.9 | 0.80930 |
 
 
 ### Hyper-parameter space
