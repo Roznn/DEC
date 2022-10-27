@@ -45,7 +45,7 @@ In supervised learning, we consider available a  dataset $\mathcal{B}=\lbrace(\m
 with $\mathbf{x}\in \mathbb{R}^{d_{\mathbf{x}}}$ denoting the  feature vector of dimension $d_{\mathbf{x}}$ and $\mathbf{y}\in \mathbb{R}^{n_c}$ the indicator class vector where $n_c$ is the number of classes.
 Our approach uses PCA trained on a dataset with training vectors $\mathbf{z}^{(i)}_{\alpha}  $   
 concatenating vectors 
-$ ( (1-\alpha)\mathbf{x}^{(i)} , \alpha\mathbf{y}^{(i)}) $
+$((1-\alpha)\mathbf{x}^{(i)} , \alpha\mathbf{y}^{(i)})$
 
 Principal Components are then used for classification even if no class information is available at test time to process a new input $\mathbf{x}$.
 
