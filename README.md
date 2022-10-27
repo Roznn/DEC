@@ -22,7 +22,8 @@ Choice of the dataset can be changed by editing that file header: it is currentl
 ```
 
 Example of output for `MNISToriginal` obtained with Octave 
- <img width="200" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
+
+<img width="200" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
 
 
 ## Datasets
