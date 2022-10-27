@@ -1,5 +1,5 @@
 % Rozenn Dahyot 2022
-%
+% Principal Component Classification https://arxiv.org/abs/2210.12746
 function DEMOPCC
 
 clear all; close all;
