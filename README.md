@@ -21,6 +21,10 @@ Choice of the dataset can be changed by editing that file header: it is currentl
 % NameOfData='australian'
 ```
 
+Example of output for `MNISToriginal` obtained with Octave 
+ <img width="200" alt="" src="images/OctaveOutputMNISToriginal-Laptop.jpg">
+
+
 ## Datasets
 
 MNIST is downloaded from https://github.com/daniel-e/mnist_octave/raw/master/mnist.mat
