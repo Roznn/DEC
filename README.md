@@ -7,8 +7,9 @@ This package contains Matlab code associated with the following publication:
 > [ArXiv:2210.12746](https://arxiv.org/pdf/2210.12746.pdf)
 Please cite this  paper when using this code.
 
-## Getting started
+## Getting started in Matlab
 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Roznn/DEC)
 
 Demo is launched by typing in the command window of Matlab (or Octave):
 > DEMOPCC
